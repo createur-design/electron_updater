@@ -8,6 +8,10 @@ contextBridge.exposeInMainWorld("versions", {
   // we can also expose variables, not just functions
 });
 
+const notification = document.getElementById("notification");
+const message = document.getElementById("message");
+const restartButton = document.getElementById("restart-button");
+
 ipcRenderer.on("update_available", () => {
   ipcRenderer.removeAllListeners("update_available");
   message.innerText = "A new update is available. Downloading now...";
