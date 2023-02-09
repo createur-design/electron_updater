@@ -1,0 +1,27 @@
+{
+  "name": "electron-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "deploy": "electron-builder build --win  --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/createur-design/electron_updater.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/createur-design/electron_updater/issues"
+  },
+  "homepage": "https://github.com/createur-design/electron_updater#readme",
+  "dependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^22.10.3",
+    "electron-updater": "^5.3.0"
+  }
+}
