@@ -15,6 +15,15 @@
   <body>
     <h1>👋 Hello Gaetan !</h1>
     <p id="info"></p>
+    <div id="notification" class="hidden">
+      <p id="message"></p>
+      <button id="close-button" onClick="window.api.closeNotification()">
+        Close
+      </button>
+      <button id="restart-button" onClick="window.api.restartApp()">
+        Restart
+      </button>
+    </div>
   </body>
   <script src="./renderer.js"></script>
 </html>
