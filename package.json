@@ -19,9 +19,9 @@
     "url": "https://github.com/createur-design/electron_updater/issues"
   },
   "homepage": "https://github.com/createur-design/electron_updater#readme",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^23.0.0",
-    "electron-builder": "^22.10.3",
+    "electron-builder": "^23.6.0",
     "electron-updater": "^5.3.0"
   }
 }
