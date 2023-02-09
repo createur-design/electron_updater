@@ -25,3 +25,12 @@ ipcRenderer.on("update_downloaded", () => {
   restartButton.classList.remove("hidden");
   notification.classList.remove("hidden");
 });
+
+contextBridge.exposeInMainWorld("api", {
+  closeNotification: () => {
+    notification.classList.add("hidden");
+  },
+  restartApp: () => {
+    ipcRenderer.send("restart_app");
+  },
+});
